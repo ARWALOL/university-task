@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #f9f2f2;
+    direction: rtl;
+    background: url('purple2.avif - Shortcut.lnk') no-repeat;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(63, 14, 103, 0.7);
+    backdrop-filter: blur(10px); /* تأثير ضبابي */
+    border-radius: 8px;
+    box-shadow: 0 0 10px magenta;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    border: 1px solid #7a37a6;
+    border-radius: 4px;
+    font-size: 16px;
+    background: #815299;
+}
+
+button {
+    background-color: magenta;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: magenta;
+}
+
+.filters {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#taskList {
+    margin-top: 20px;
+}
+
+.task {
+    background: #2d1a42;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.task h3 {
+    margin: 0;
+    color: #fbf7f7;
+}
+
+.task p {
+    margin: 5px 0;
+    color: #fbf8f8;
+}
+
+.task .due-date {
+    color: #d9534f;
+}
+
+.task .priority {
+    font-weight: bold;
+}
+
+.task .priority.low {
+    color: #5bc0de;
+}
+
+.task .priority.medium {
+    color: #f0ad4e;
+}
+
+.task .priority.high {
+    color: #d9534f;
+}
+
+#productivityAnalysis {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ab53b0;
+    border-radius: 5px;
+    background-color: #b973cc;
+}
+
+#productivityAnalysis h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #f9f6f6;
+}
+
+#productivityAnalysis p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #fefcfc;
+}
+
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: #000000;
+    opacity: 1; 
+}
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+    color: #000000; 
+}
+
+
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder {
+    color: #000000;
+    opacity: 1; 
+}
+
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+    color: #000000; 
+}

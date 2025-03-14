@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نظام إدارة المهام</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script>
+    // تهيئة EmailJS
+    (function() {
+      emailjs.init("N7zIfGCruexDtewLu"); // استبدل YOUR_USER_ID بـ User ID الخاص بك
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>نظام إدارة المهام الجامعية</h1>
+    <form id="taskForm">
+      <input type="text" id="taskTitle" placeholder="أدخل عنوان المهمة" required>
+      <textarea id="taskDescription" placeholder="أدخل وصف المهمة"></textarea>
+      <input type="date" id="taskDueDate" required>
+      <select id="taskPriority">
+        <option value="low">منخفض</option>
+        <option value="medium">متوسط</option>
+        <option value="high">مرتفع</option>
+      </select>
+      <input type="email" id="userEmail" placeholder="أدخل بريدك الإلكتروني" required>
+      <button type="submit">إضافة مهمة</button>
+    </form>
+
+    <div class="filters">
+      <label for="filterPriority">تصفية حسب الأولوية:</label>
+      <select id="filterPriority">
+        <option value="all">الكل</option>
+        <option value="low">منخفض</option>
+        <option value="medium">متوسط</option>
+        <option value="high">مرتفع</option>
+      </select>
+    </div>
+
+    <div id="taskList"></div>
+  </div>
+  <div id="productivityAnalysis">
+    <h2>تحليل الإنتاجية</h2>
+    <p>إجمالي المهام: <span id="totalTasks">0</span></p>
+    <p>المهام المكتملة: <span id="completedTasks">0</span></p>
+    <p>النسبة المئوية للإنتاجية: <span id="productivityPercentage">0%</span></p>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
